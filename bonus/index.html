@@ -14,6 +14,7 @@
 </head>
             
 <body>
+
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg mb-4 bg-dark bg-gradient">
         <div class="container-fluid">
@@ -22,7 +23,24 @@
             </a>
             <button class="navbar-toggler border-dark-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="justify">
+                        <g id="Vector">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 12.5C2 12.2239 2.22386 12 2.5 12H13.5C13.7761 12 14 12.2239 14 12.5C14 12.7761 13.7761 13 13.5 13H2.5C2.22386 13 2 12.7761 2 12.5Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 9.5C2 9.22386 2.22386 9 2.5 9H13.5C13.7761 9 14 9.22386 14 9.5C14 9.77614 13.7761 10 13.5 10H2.5C2.22386 10 2 9.77614 2 9.5Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 6.5C2 6.22386 2.22386 6 2.5 6H13.5C13.7761 6 14 6.22386 14 6.5C14 6.77614 13.7761 7 13.5 7H2.5C2.22386 7 2 6.77614 2 6.5Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 3.5C2 3.22386 2.22386 3 2.5 3H13.5C13.7761 3 14 3.22386 14 3.5C14 3.77614 13.7761 4 13.5 4H2.5C2.22386 4 2 3.77614 2 3.5Z"
+                                fill="white" />
+                        </g>
+                    </g>
+                </svg>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -30,13 +48,13 @@
                         <a class="nav-link active text-white" aria-current="page" href="#book-catalog">Catalogo Libri</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-white-50" aria-disabled="true" href="#">Anagrafica Utenti</a>
+                        <a class="nav-link text-white-50" href="#">Anagrafica Utenti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-white-50" aria-disabled="true" href="#">Storico Prestiti</a>
+                        <a class="nav-link text-white-50" href="#">Storico Prestiti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-white-50" aria-disabled="true" href="#">Help</a>
+                        <a class="nav-link text-white-50" href="#">Help</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -50,12 +68,11 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-8">
+            <div class="col-lg-8">
                 
                 <!-- header -->
                 <header class="mb-4">
                 
-                    <!-- <div class="container"> -->
                     <div class="d-flex justify-content-between">
                         <h1 id="book-catalog" class="h3">Catalogo Libri</h1>
                         <button type="button" class="btn btn-primary btn-sm">Aggiungi Libro</button>
@@ -65,9 +82,7 @@
                 </header>
                 
                 <!-- table -->
-                <!-- <div class="container"> -->
-                
-                <table class="table table-striped table-hover">
+                <table class="table table-striped table-hover mb-sm-4">
             
                     <thead>
                         <tr>
@@ -403,8 +418,87 @@
                 </table>
             </div>
 
-            <div class="col-4">
+            <div class="col-lg-4">
                 
+                <!-- to do list -->
+                <ul class="list-group mb-4">
+                    <li class="list-group-item bg-body-tertiary fs-3 fw-medium">Todo</li>
+                    <li class="list-group-item">
+
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="call-secretary" id="check-call-secretary" name="check-list">
+                                    <label class="form-check-label" for="check-call-secretary">
+                                        Chiamare segreteria
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="expired-notices" id="check-expired-notices" name="check-list">
+                                    <label class="form-check-label" for="check-expired-notices">
+                                        Mandare avvisi prestiti scaduti
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="new-book" id="check-new-book" name="check-list">
+                                    <label class="form-check-label" for="check-new-book">
+                                        Ordinare nuovi libri
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+                <!-- FAQ -->
+                <ul class="list-group">
+                    <li class="list-group-item bg-body-tertiary fs-3 fw-medium">F.A.Q</li>
+                    <li class="list-group-item">
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Come aggiungere un nuovo libro?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Come posso accedere all'anagrafica utenti?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+
             </div>
         </div>
         
