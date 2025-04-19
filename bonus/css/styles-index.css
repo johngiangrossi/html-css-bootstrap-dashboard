@@ -1,0 +1,39 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generics */
+body {
+    font-family: sans-serif;
+}
+
+/* utils */
+
+
+/* navbar */
+.logo {
+    width: 60px;
+}
+
+/* debug */
+.debug .container {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.debug .row {
+    border: 2px solid red;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.debug .row>* {
+    border: 2px solid cornflowerblue;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+
