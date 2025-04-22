@@ -10,408 +10,301 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles-index.css">
+    <script src="https://kit.fontawesome.com/6c707c5168.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./assets/img/img/duck.png" type="image/png">
 </head>
             
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg mb-4 bg-dark bg-gradient">
 
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/img/img/duck.png" alt="logo-duck" class="logo">
-            </a>
-            <button class="navbar-toggler border-dark-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="justify">
-                        <g id="Vector">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2 12.5C2 12.2239 2.22386 12 2.5 12H13.5C13.7761 12 14 12.2239 14 12.5C14 12.7761 13.7761 13 13.5 13H2.5C2.22386 13 2 12.7761 2 12.5Z"
-                                fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2 9.5C2 9.22386 2.22386 9 2.5 9H13.5C13.7761 9 14 9.22386 14 9.5C14 9.77614 13.7761 10 13.5 10H2.5C2.22386 10 2 9.77614 2 9.5Z"
-                                fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2 6.5C2 6.22386 2.22386 6 2.5 6H13.5C13.7761 6 14 6.22386 14 6.5C14 6.77614 13.7761 7 13.5 7H2.5C2.22386 7 2 6.77614 2 6.5Z"
-                                fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2 3.5C2 3.22386 2.22386 3 2.5 3H13.5C13.7761 3 14 3.22386 14 3.5C14 3.77614 13.7761 4 13.5 4H2.5C2.22386 4 2 3.77614 2 3.5Z"
-                                fill="white" />
-                        </g>
-                    </g>
-                </svg>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#book-catalog">Catalogo Libri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white-50" href="#">Anagrafica Utenti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white-50" href="#">Storico Prestiti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white-50" href="#">Help</a>
-                    </li>
-                </ul>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg mb-4 bg-dark bg-gradient" data-bs-theme="dark">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/img/duck.png" alt="logo-duck" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#book-catalog">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
-    </nav>
-
-    <!-- header -->
-    <header class="mb-4">
-
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <h1 id="book-catalog" class="h3">Catalogo Libri</h1>
-                <button type="button" class="btn btn-primary btn-sm">Aggiungi Libro</button>
-            </div>
-        </div>
-
+        </nav>
     </header>
+    
+    <main>
 
-    <!-- table -->
-    <div class="container">
+        <div class="mb-4">
 
-        <table class="table table-striped table-hover">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <h1 id="book-catalog" class="h3">Catalogo Libri</h1>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Aggiungi Libro</a>
+                </div>
+            </div>
 
-            <thead>
-                <tr>
-                    <th scope="col">Titolo</th>
-                    <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
-                    <th scope="col">Stato</th>
-                    <th scope="col">Azioni</th>
-                </tr>
-            </thead>
+        </div>
 
-            <tbody>
+        <!-- table -->
+        <div class="container">
 
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">I pilastri della terra</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
-                    <td>
-                        <span class="badge text-bg-success">Disponibile</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>  
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
+            <table class="table table-striped table-hover mb-sm-4">
+            
+                <thead>
+                    <tr>
+                        <th scope="col" class="w-50">Titolo</th>
+                        <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col" class="text-center">Azioni</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">I pilastri della terra</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">I promessi sposi</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">Il signore degli anelli</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">
+                            <time datetime="2023-10-18">18/10/2023</time>
+                        </td>
+                        <td>
+                            <span class="badge text-white bg-warning">In prestito</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">Harry Potter e la pietra filosofale</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">Il codice Da Vinci</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
+                        <td>
+                            <span class="badge text-bg-danger">Non disponibile</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">Shining</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">La divina commedia</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">
+                            <time datetime="2023-09-21">21/09/2023</time>
+                        </td>
+                        <td>
+                            <span class="badge text-white bg-warning">In prestito</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">Il trono di spade</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">Il mondo di Sofia</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
+                        <td>
+                            <span class="badge text-bg-danger">Non disponibile</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">Le cronache di Narnia: il leone, la strega, e l'armadio
+                        </td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">
+                            <time datetime="2023-07-25">25/07/2023</time>
+                        </td>
+                        <td>
+                            <span class="badge text-white bg-warning">In prestito</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">Il piccolo principe</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td scope="row" class="fs-6 text-dark-emphasis">La storia infinita</td>
+                        <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
+                        <td>
+                            <span class="badge text-bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary btn-sm" href="#" role="button">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+            
+                </tbody>
+            </table>
 
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">I promessi sposi</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
-                    <td>
-                        <span class="badge text-bg-success">Disponibile</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">Il signore degli anelli</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">
-                        <time datetime="2023-10-18">18/10/2023</time>
-                    </td>
-                    <td>
-                        <span class="badge text-white bg-warning">In prestito</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">Harry Potter e la pietra filosofale</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
-                    <td>
-                        <span class="badge text-bg-success">Disponibile</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">Il codice Da Vinci</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
-                    <td>
-                        <span class="badge text-bg-danger">Non disponibile</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">Shining</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
-                    <td>
-                        <span class="badge text-bg-success">Disponibile</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">La divina commedia</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">
-                        <time datetime="2023-09-21">21/09/2023</time>
-                    </td>
-                    <td>
-                        <span class="badge text-white bg-warning">In prestito</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">Il trono di spade</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
-                    <td>
-                        <span class="badge text-bg-success">Disponibile</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">Il mondo di Sofia</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
-                    <td>
-                        <span class="badge text-bg-danger">Non disponibile</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">Le cronache di Narnia: il leone, la strega, e l'armadio</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">
-                        <time datetime="2023-07-25">25/07/2023</time>
-                    </td>
-                    <td>
-                        <span class="badge text-white bg-warning">In prestito</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">Il piccolo principe</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
-                    <td>
-                        <span class="badge text-bg-success">Disponibile</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td scope="row" class="fs-6 text-dark-emphasis">La storia infinita</td>
-                    <td class="fs-6 text-dark-emphasis d-none d-md-table-cell">-</td>
-                    <td>
-                        <span class="badge text-bg-success">Disponibile</span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-pencil-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                </svg>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="grey" class="bi bi-trash-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </div>
-
+        </div>
+    </main>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
